@@ -13,10 +13,11 @@ public:
     bool busy;
     bool forkliftCertificate;
     Employee();
+    std::string getName();
     Employee(std::string name, bool forkliftCertificate);
-    std::string getName() const;
-    bool getBusy() const;
+    std::string getName() ;
+    bool getBusy() ;
     void setBusy(bool busy);
-    bool getForkliftCertified() const;
+    bool getForkliftCertificate();
     void setForkliftCertificate(bool forkliftCertificate);
 };
