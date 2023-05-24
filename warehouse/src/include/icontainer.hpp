@@ -1,7 +1,8 @@
+#pragma once
 #include <iostream>
 
 class IContainer{
     public:
-        virtual bool isEmpty() = 0;
-        virtual bool isFull() = 0;
+        virtual bool isEmpty() const = 0;
+        virtual bool isFull() const = 0;
 };
