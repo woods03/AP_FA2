@@ -1,23 +1,19 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <list>
-#include <vector>
+#include<iostream>
 
-class Employee
-{
-private:
-    std::string name;
+class Employee{
+    private:
+        std::string name;
+        bool busy;
+        bool forkliftCertificate;
 
-public:
-    bool busy;
-    bool forkliftCertificate;
-    Employee();
-    std::string getName();
-    Employee(std::string name, bool forkliftCertificate);
-    std::string getName() ;
-    bool getBusy() ;
-    void setBusy(bool busy);
-    bool getForkliftCertificate();
-    void setForkliftCertificate(bool forkliftCertificate);
+    public:
+
+       Employee(std::string name, bool forkliftCertificate);
+       
+       std::string getName();
+       bool getBusy();
+       void setBusy(bool busy);
+       bool getForkliftCertificate();
+       void setForkliftCertificate(bool forkliftCertificate);
 };

@@ -8,10 +8,13 @@
 
 class Warehouse
 {
-private:
-    std::vector<Employee> Employees;
+    
 public:
-
+    std::vector<Employee> Employees;
+    std::vector<Shelf> shelves;
     Warehouse();
     void addEmployee(Employee employee);
+    void addShelf(Shelf Shelf);
+    bool rearrangeShelf(Shelf& Shelf);
+    bool PickItems(std::string itemName, int itemCount);
 };
