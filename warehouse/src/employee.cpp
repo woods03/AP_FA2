@@ -4,14 +4,8 @@
 
 
 
-Employee::Employee(){
+Employee::Employee(std::string name, bool forkliftCertificate): name(name), forkliftCertificate(forkliftCertificate) {}
 
-};
-
-Employee::Employee(std::string name, bool forkliftCertificate){
-    this ->name = name;
-    this ->forkliftCertificate = forkliftCertificate;
-};
 
 std::string Employee::getName(){
     return name;

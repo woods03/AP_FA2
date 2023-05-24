@@ -18,7 +18,7 @@ bool Shelf::swapPallet(int slot1, int slot2) {
     }
 };
 
-bool Shelf::isEmpty(){
+bool Shelf::isEmpty() const{
     for (Pallet pallet : pallets){
         if (pallet.getItemCount() != 0){
             return false;
@@ -28,7 +28,7 @@ bool Shelf::isEmpty(){
 };
 
 
-bool Shelf::isFull(){
+bool Shelf::isFull() const{
     for (Pallet pallet : pallets){
         if (pallet.getRemainingSpace() != 0){
             return false;
