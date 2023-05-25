@@ -13,7 +13,7 @@ EXT = .cpp
 SRCDIR = src
 OBJDIR = obj
 
-TESTAPPNAME = testWarehouseextra
+TESTAPPNAME = test
 TESTSRCDIR = test
 TESTOBJDIR = testobj
 
