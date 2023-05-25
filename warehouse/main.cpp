@@ -4,11 +4,9 @@
 #include "src/include/warehouse.hpp"
 #include "src/include/shelf.hpp"
 
-int main() {
-    Employee employee("John Doe", true);
-    employee.setBusy(true);
 
-    std::cout << employee << std::endl;
+
+int main() {
 
     return 0;
 }
