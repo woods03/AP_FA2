@@ -18,6 +18,6 @@ public:
     void addShelf(Shelf Shelf);
     bool rearrangeShelf(Shelf& Shelf);
     bool pickItems(std::string itemName, int itemCount);
-    friend std::ostream &operator<<(std::ostream os, Warehouse w);
+    friend std::ostream &operator<<(std::ostream& os, Warehouse& w);
     
 };

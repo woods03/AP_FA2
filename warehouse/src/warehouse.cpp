@@ -2,7 +2,7 @@
 #include "include/Warehouse.hpp"
 #include "include/Shelf.hpp"
 
-Warehouse::Warehouse(){}
+Warehouse::Warehouse() : Employees({}), shelves({}) {}
 
 void Warehouse::addEmployee(Employee employee){
     Employees.push_back(employee);
@@ -76,4 +76,19 @@ bool Warehouse::pickItems(std::string itemName, int itemCount){
         
     }
     return true;
+}
+
+
+std::ostream &operator<<(std::ostream& os, Warehouse& w) {
+    os << "Employees: " << std::endl;
+    for (Employee& employee : w.Employees) {
+        os << employee << std::endl;
+    }
+
+    os << std::endl << "Shelves: " << std::endl;
+    for (Shelf& shelf : w.shelves) {
+        os << shelf << std::endl;
+    }
+
+    return os;
 }
