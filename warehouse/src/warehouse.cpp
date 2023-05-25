@@ -14,8 +14,12 @@ void Warehouse::addShelf(Shelf shelf){
 
 //to add in future comments: chatgpt helped with this :P
 bool Warehouse::rearrangeShelf(Shelf& shelf) {
+    bool qualifiedEmployeeFound = false;
+
     for (auto& employee : Employees) {
-        if (!employee.getBusy() || employee.getForkliftCertificate()) {
+        if (!employee.getBusy() && employee.getForkliftCertificate()) {
+            qualifiedEmployeeFound = true;
+
             bool rearranging = true;
             while (rearranging) {
                 rearranging = false;
@@ -25,11 +29,18 @@ bool Warehouse::rearrangeShelf(Shelf& shelf) {
                     }
                 }
             }
+
             return true;
         }
     }
-    return false;
+
+    if (!qualifiedEmployeeFound) {
+        return false;
+    }
+
+    return true;  // Default return statement to satisfy function signature
 }
+
 
 bool Warehouse::PickItems(std::string itemName, int itemCount){
     if (itemCount <= 0){
