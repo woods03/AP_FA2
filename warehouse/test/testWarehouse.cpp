@@ -1,4 +1,4 @@
-/*#include "include/catch.hpp"
+#include "include/catch.hpp"
 
 #include "../src/include/warehouse.hpp"
 #include <iostream>
@@ -234,4 +234,4 @@ TEST_CASE("Rearrange shelf with quallified, but busy, employee", "Warehouse::rea
     REQUIRE(warehouse.shelves[0].pallets[1].getItemCount() == 40);
     REQUIRE(warehouse.shelves[0].pallets[2].getItemCount() == 30);
     REQUIRE(warehouse.shelves[0].pallets[3].getItemCount() == 10);
-}*/
+}
