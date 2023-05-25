@@ -26,3 +26,7 @@ bool Employee::getForkliftCertificate(){
 void Employee::setForkliftCertificate(bool forkliftCertificate){
     this->forkliftCertificate = forkliftCertificate;
 };
+
+std::ostream &operator<<(std::ostream& os, Employee& e) {
+    os << "(Name: " << e.name << ", Certificate: "  << e.forkliftCertificate << ", Busy: " << e.busy << ")";
+    return os;

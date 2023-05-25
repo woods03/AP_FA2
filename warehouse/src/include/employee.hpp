@@ -16,4 +16,5 @@ class Employee{
        void setBusy(bool busy);
        bool getForkliftCertificate();
        void setForkliftCertificate(bool forkliftCertificate);
+       friend std::ostream &operator<<(std::ostream& os, Employee& e);
 };
