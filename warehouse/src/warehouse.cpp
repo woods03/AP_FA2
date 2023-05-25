@@ -42,7 +42,7 @@ bool Warehouse::rearrangeShelf(Shelf& shelf) {
 }
 
 
-bool Warehouse::PickItems(std::string itemName, int itemCount){
+bool Warehouse::pickItems(std::string itemName, int itemCount){
     if (itemCount <= 0){
         return false;
     }

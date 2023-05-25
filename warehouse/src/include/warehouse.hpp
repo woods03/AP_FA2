@@ -17,5 +17,5 @@ public:
     void addEmployee(Employee employee);
     void addShelf(Shelf Shelf);
     bool rearrangeShelf(Shelf& Shelf);
-    bool PickItems(std::string itemName, int itemCount);
+    bool pickItems(std::string itemName, int itemCount);
 };
