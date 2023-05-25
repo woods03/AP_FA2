@@ -15,6 +15,8 @@ The requirements are that we have 4 main features:
 
 
 The Project contains 2 parts that are runnable:
+
 1: Main showcase: This shows all possiblities and how it works.
+
 2: Testcases: This is used to validate the working during making of the program and afterwards as proof aswell.
 ## How to run
