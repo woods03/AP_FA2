@@ -137,13 +137,14 @@ while (itemCount3 > 0) {
     itemCount3--;
 }
 
-
+// Warehouse met toegevoegde items
 std::cout << warehouse << std::endl;
 
 std::cout << "As u can see we have added some items to the beer and wine pallets\n" << std::endl;
 
 waitForEnterKey();
 
+// Alle pallets worden op volgorde van aantal producten gesorteerd
 std::cout << "For our last function we will rearrange all the shelves in our warehouse\n" << std::endl;
 
 waitForEnterKey();

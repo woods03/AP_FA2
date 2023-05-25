@@ -8,11 +8,11 @@
 class Shelf : public IContainer {
 
     public:
-
+        // Constructor
         std::array<Pallet, 4> pallets;
 
         Shelf();
-
+        // Functions
         bool swapPallet(int slot, int slot2);
         bool isEmpty() const override;
         bool isFull()  const override;

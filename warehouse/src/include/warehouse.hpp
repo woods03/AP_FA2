@@ -12,8 +12,9 @@ class Warehouse
 public:
     std::vector<Employee> Employees;
     std::vector<Shelf> shelves;
-    
+    //Constructor
     Warehouse();
+    // Functions
     void addEmployee(Employee employee);
     void addShelf(Shelf Shelf);
     bool rearrangeShelf(Shelf& Shelf);

@@ -4,16 +4,17 @@
 
 class Pallet : public IContainer {
     private:
+        
         std::string itemName;
         int itemCapacity;
         int itemCount;
 
     public:
-
+        // Constructor
         Pallet(std::string itemName, int itemCapacity, int itemCount);
 
         Pallet();
-
+        // Functions
         std::string getItemName();
         int getItemCount();
         int getRemainingSpace();

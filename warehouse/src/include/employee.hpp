@@ -8,9 +8,9 @@ class Employee{
         bool forkliftCertificate;
 
     public:
-
+        // Constuctor
        Employee(std::string name, bool forkliftCertificate);
-       
+       // Functions
        std::string getName();
        bool getBusy();
        void setBusy(bool busy);
