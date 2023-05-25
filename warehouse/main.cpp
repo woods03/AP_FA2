@@ -156,7 +156,7 @@ std::cout << "\nNow all our shelves are arranged on the amount of items, so sati
 
 waitForEnterKey();
 
-std::cout << "This was the showcase of Bosch warehouse, i hope we have shown enough information en that it is helpfull about the working of the Warehouse." << std::endl;
+std::cout << "This was the showcase of Bosch warehouse, i hope we have shown enough information en that it is helpful about the working of the Warehouse." << std::endl;
 std::cout << "\nThanks for visiting and this was the end!!" << std::endl;
 
     return 0;
