@@ -15,8 +15,33 @@ The requirements are that we have 4 main features:
 
 
 The Project contains 2 parts that are runnable:
-1: Main showcase: This shows all possiblities and how it works.
+1: Main showcase: This shows all possiblities and how it works through print statements etc.
 2: Testcases: This is used to validate the working during making of the program and afterwards as proof aswell.
 
 
 ## How to run
+- First of all u will need to have C++ installed, if u do not have that yet i recommend searching online how to install.
+
+- When installed u will need to clone the repository to your own device
+
+- After cloning u will have to configure/build the makefile setting according to what u like to run. We do this by changing the build target, therefor we have 2 options:
+
+1: Build target [Test]: this consists of a certain amount of testcases validating the system work and is often used during the making of the program.
+
+2: Build target [Main]: this consists of a showcase where the working and all functions will be shown as an example of how it works.
+
+- Now u are able to run the program as normal.
+
+
+#### helpfull information
+When running the testcases if u would like to see a list of al testcase names which are running do the following:
+
+1: open a gitbash terminal in Vscode.
+
+2: Type the following command: ./testWarehouse --list-test-names-only
+
+This will show a list of all testcases being run.
+
+#### Sources:
+- Chatgpt
+- Stackoverflow
