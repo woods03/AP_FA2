@@ -26,7 +26,7 @@ The Project contains 2 parts that are runnable:
 
 - After cloning u will have to configure/build the makefile setting according to what u like to run. We do this by changing the build target, therefor we have 2 options:
 
-1: Build target [Test]: this consists of a certain amount of testcases validating the system work and is often used during the making of the program.
+1: Build target [Test]: this consists of a certain amount of testcases validating the system works and is used during the making of the program to test functions.
 
 2: Build target [Main]: this consists of a showcase where the working and all functions will be shown as an example of how it works.
 
